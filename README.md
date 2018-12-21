@@ -17,17 +17,19 @@ ins=The verisure instalation id (How to get it is described bellow)
 dev=The device label for the yale doorman (urlencoded)(How to get it is described bellow)
 
 # The intentions (int=intentionName)
-int=installid/n
+int=installid
 Here you will be able to see the installation id this will be the giid field in the returned json.
 Example call: https://example.com/verisure.php?ma=email@email.com&pw=yourPassword&int=installid
 
 
-int=status/n
+int=status
 Here you will be able to see the label for the yale doorman this will be the deviceLabel field in the returned json.
 You will also here be able to see the status of the lock(Locked/Unlocked)
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=status&ins=YOUR_INSTALL_ID'
 
-int=lock/n
+int=lock
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=lock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
+
+
 int=unlock/n
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=unlock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
