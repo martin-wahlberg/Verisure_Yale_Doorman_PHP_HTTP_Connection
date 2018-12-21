@@ -3,11 +3,17 @@ Simple php/http connection for Verisure Yale Doorman. Reverse-enginered from the
 
 # The url parameters:
 The url have 6 possible parameters:\n
+
 ma=Your e-mail address used for logging in to your verisure account\n
+
 pw=The password you use for logging in to your verisure account\n
+
 dc=The doorcode you use to open your door with the keypad\n
+
 int=The intention for your request four different choices(Will be described below)\n
+
 ins=The verisure instalation id (How to get it is described bellow)\n
+
 dev=The device label for the yale doorman (urlencoded)(How to get it is described bellow)\n
 
 # The intentions (int=intentionName)
@@ -23,6 +29,5 @@ Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&
 
 int=lock/n
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=lock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE\n
-
 int=unlock/n
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=unlock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE\n
