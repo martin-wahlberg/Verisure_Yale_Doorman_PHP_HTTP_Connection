@@ -23,13 +23,52 @@ Example call: https://example.com/verisure.php?ma=email@email.com&pw=yourPasswor
 
 
 int=status
+
 Here you will be able to see the label for the yale doorman this will be the deviceLabel field in the returned json.
 You will also here be able to see the status of the lock(Locked/Unlocked)
+
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=status&ins=YOUR_INSTALL_ID'
 
 int=lock
+
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=lock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
 
 
 int=unlock/n
+
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=unlock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
+
+# Step by step
+First:
+
+Uplopad verisure.php to the place where you want to access it:
+
+Second:
+
+Get your installation id by calling:
+
+https://YOURDOMAIN.com/verisure.php?ma=email@email.com&pw=yourPassword&int=installid
+
+Third:
+
+Get your door label by calling:
+
+https://YOURDOMAIN.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=status&ins=YOUR_INSTALL_ID'
+
+
+Fourth:
+
+Get door status, lock your door, ulock your door:
+
+//Status
+
+https://YOURDOMAIN.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=status&ins=YOUR_INSTALL_ID'
+
+//Lock
+
+https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=lock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
+
+//Unlock
+
+https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=unlock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
+
