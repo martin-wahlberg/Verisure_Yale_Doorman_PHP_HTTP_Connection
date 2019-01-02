@@ -46,7 +46,7 @@ if ($intention === "installid")
 elseif ($intention === "lock" || $intention === "unlock")
 {
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, "$baseURL/installation/$installationId/device/2ANG%20CCR7/$intention");
+	curl_setopt($ch, CURLOPT_URL, "$baseURL/installation/$installationId/device/$deviceLabel/$intention");
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, ['Connection: keep-alive', 'Accept: application/json, text/javascript, */*; q=0.01', 'APPLICATION_ID: VS_APP_IPHONE', 'Content-Type: application/json;charset=UTF-8', "Cookie: vid=$cookie", ]);
