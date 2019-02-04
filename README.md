@@ -34,7 +34,7 @@ int=lock
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=lock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
 
 
-int=unlock/n
+int=unlock
 
 Example call: https://example.com/verisure.php?ma=mail@mail.com&pw=yourPassword&int=unlock&ins=YOUR_INSTALL_ID&dev=YOUR_YALE_LABLE&dc=YOUR_DOORCODE
 
